@@ -6,7 +6,7 @@ import torch.nn.functional as F
 import torch.optim as optim
 from torchvision import datasets, transforms
 from torch.optim.lr_scheduler import StepLR
-
+print('')
 
 class Net(nn.Module):
     def __init__(self):
@@ -69,7 +69,7 @@ def test(model, device, test_loader):
         test_loss, correct, len(test_loader.dataset),
         100. * correct / len(test_loader.dataset)))
 
-
+print('')
 def main():
     # Training settings
     parser = argparse.ArgumentParser(description='PyTorch MNIST Example')
